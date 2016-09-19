@@ -14,14 +14,14 @@ protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol: class {
 
 class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBASENAMEASIDENTIFIER___ViewProtocol {
   
-  // MARK: Public properties
+  // MARK: - Public properties
   
   lazy var presenter:___FILEBASENAMEASIDENTIFIER___Presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(view: self)
-  // MARK: Private properties
+  // MARK: - Private properties
   
   private var tableController:___FILEBASENAMEASIDENTIFIER___TableViewController!
   
-  // MARK: View lifecycle
+  // MARK: - View lifecycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -39,9 +39,9 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBAS
     }
   }
   
-  // MARK: Display logic
+  // MARK: - Display logic
   
-  // MARK: Actions
+  // MARK: - Actions
   
-  // MARK: Private functions
+  // MARK: - Private functions
 }

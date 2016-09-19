@@ -14,10 +14,10 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterProtocol: class {
 
 class ___FILEBASENAMEASIDENTIFIER___Presenter {
   
-  // MARK: Public variables
+  // MARK: - Public variables
   weak var view:___FILEBASENAMEASIDENTIFIER___ViewProtocol?
   weak var tableView: ___FILEBASENAMEASIDENTIFIER___TableViewProtocol?
-  // MARK: Private variables
+  // MARK: - Private variables
   
   init(view:___FILEBASENAMEASIDENTIFIER___ViewProtocol) {
     self.view = view

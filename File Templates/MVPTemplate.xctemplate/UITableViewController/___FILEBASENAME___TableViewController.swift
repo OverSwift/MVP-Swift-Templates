@@ -14,13 +14,13 @@ protocol ___FILEBASENAMEASIDENTIFIER___TableViewProtocol: class {
 
 class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController, ___FILEBASENAMEASIDENTIFIER___TableViewProtocol {
   
-  // MARK: Public properties
+  // MARK: - Public properties
   
   var presenter:___FILEBASENAMEASIDENTIFIER___Presenter!
   
-  // MARK: Private properties
+  // MARK: - Private properties
   
-  // MARK: View lifecycle
+  // MARK: - View lifecycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -30,13 +30,13 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController, 
     super.viewWillAppear(animated)
   }
   
-  // MARK: Display logic
+  // MARK: - Display logic
   
-  // MARK: Actions
+  // MARK: - Actions
   
-  // MARK: Private functions
+  // MARK: - Private functions
   
-  // MARK: Overrides
+  // MARK: - Overrides
   
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
