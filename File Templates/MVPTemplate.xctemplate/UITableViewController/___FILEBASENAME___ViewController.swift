@@ -32,7 +32,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBAS
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if let table = segue.destinationViewController as? ___FILEBASENAMEASIDENTIFIER___TableViewController {
+    if let table = segue.destination as? ___FILEBASENAMEASIDENTIFIER___TableViewController {
       tableController = table
       tableController.presenter = presenter
       presenter.tableView = table

@@ -39,7 +39,7 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController, 
   // MARK: - Overrides
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    tableView.deselectRow(at: indexPath, animated: true)
   }
   
   override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
