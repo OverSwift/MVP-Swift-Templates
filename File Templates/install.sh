@@ -14,7 +14,7 @@ echo "Templates will be installed to $installDirectory"
 # Delete the install directory if it already exists to prevent deleted files from lingering.
 if [ -d "$installDirectory" ]
 then
-	rm -r "$installDirectory"
+rm -r "$installDirectory"
 fi
 
 # Create the install directory.
@@ -22,3 +22,5 @@ mkdir -p "$installDirectory"
 
 # Copy all of the xctemplate folders into the install directory.
 cp -r "$sourceDirectory"/*.xctemplate "$installDirectory"
+
+echo "Templates was installed to $installDirectory"
