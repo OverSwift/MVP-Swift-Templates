@@ -26,7 +26,7 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController, 
     super.viewDidLoad()
   }
   
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
   }
   
@@ -38,15 +38,15 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController, 
   
   // MARK: - Overrides
   
-  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
   }
   
-  override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+  override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
     return <#EstimatedHeight#>
   }
   
-  override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+  override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return UITableViewAutomaticDimension
   }
 }
