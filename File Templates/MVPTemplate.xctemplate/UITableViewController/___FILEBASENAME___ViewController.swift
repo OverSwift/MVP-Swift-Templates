@@ -12,14 +12,14 @@ protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol: class {
   
 }
 
-class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBASENAMEASIDENTIFIER___ViewProtocol {
+class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
   
   // MARK: - Public properties
   
-  lazy var presenter:___FILEBASENAMEASIDENTIFIER___Presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(view: self)
+  lazy var presenter:___FILEBASENAMEASIDENTIFIER___PresenterProtocol = ___FILEBASENAMEASIDENTIFIER___Presenter(view: self)
   // MARK: - Private properties
   
-  private var tableController:___FILEBASENAMEASIDENTIFIER___TableViewController!
+  private weak var tableController:___FILEBASENAMEASIDENTIFIER___TableViewController!
   
   // MARK: - View lifecycle
   
@@ -44,4 +44,8 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBAS
   // MARK: - Actions
   
   // MARK: - Private functions
+}
+
+extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___ViewProtocol {
+    
 }

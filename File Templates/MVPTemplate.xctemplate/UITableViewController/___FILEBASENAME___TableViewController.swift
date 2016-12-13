@@ -12,11 +12,11 @@ protocol ___FILEBASENAMEASIDENTIFIER___TableViewProtocol: class {
   
 }
 
-class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController, ___FILEBASENAMEASIDENTIFIER___TableViewProtocol {
+class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController {
   
   // MARK: - Public properties
   
-  var presenter:___FILEBASENAMEASIDENTIFIER___Presenter!
+  var presenter:___FILEBASENAMEASIDENTIFIER___PresenterProtocol!
   
   // MARK: - Private properties
   
@@ -49,4 +49,8 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController, 
   override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return UITableViewAutomaticDimension
   }
+}
+
+extension ___FILEBASENAMEASIDENTIFIER___TableViewController:  ___FILEBASENAMEASIDENTIFIER___TableViewProtocol {
+    
 }
