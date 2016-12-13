@@ -9,7 +9,8 @@
 import UIKit
 
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterProtocol: class {
-  
+  weak var view:___FILEBASENAMEASIDENTIFIER___ViewProtocol? { get set }
+  weak var tableView: ___FILEBASENAMEASIDENTIFIER___TableViewProtocol? { get set }
 }
 
 class ___FILEBASENAMEASIDENTIFIER___Presenter {
