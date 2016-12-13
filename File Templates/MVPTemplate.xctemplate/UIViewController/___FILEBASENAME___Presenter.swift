@@ -9,7 +9,7 @@
 import UIKit
 
 protocol ___FILEBASENAMEASIDENTIFIER___PresenterProtocol: class {
-  
+  weak var view:___FILEBASENAMEASIDENTIFIER___ViewProtocol? { get set }
 }
 
 class ___FILEBASENAMEASIDENTIFIER___Presenter {
@@ -19,6 +19,7 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter {
   
   // MARK: - Private variables
   
+  // MARK: - Initialization
   init(view:___FILEBASENAMEASIDENTIFIER___ViewProtocol) {
     self.view = view
   }

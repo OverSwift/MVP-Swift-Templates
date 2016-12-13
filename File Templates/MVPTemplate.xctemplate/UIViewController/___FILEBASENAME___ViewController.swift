@@ -12,11 +12,11 @@ protocol ___FILEBASENAMEASIDENTIFIER___ViewProtocol: class {
   
 }
 
-class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBASENAMEASIDENTIFIER___ViewProtocol {
+class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
   
   // MARK: - Public properties
   
-  lazy var presenter:___FILEBASENAMEASIDENTIFIER___Presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(view: self)
+  lazy var presenter:___FILEBASENAMEASIDENTIFIER___PresenterProtocol = ___FILEBASENAMEASIDENTIFIER___Presenter(view: self)
   
   // MARK: - Private properties
   
@@ -34,5 +34,11 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBAS
   
   // MARK: - Actions
   
+  // MARK: - Overrides
+    
   // MARK: - Private functions
+}
+
+extension ___FILEBASENAMEASIDENTIFIER___ViewController:  ___FILEBASENAMEASIDENTIFIER___ViewProtocol {
+    
 }
