@@ -19,9 +19,14 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter {
   weak var tableView: ___FILEBASENAMEASIDENTIFIER___TableViewProtocol?
   // MARK: - Private variables
   
+  // MARK: - Initialization
   init(view:___FILEBASENAMEASIDENTIFIER___ViewProtocol) {
     self.view = view
   }
+    
+  // MARK: - public functions
+    
+  // MARK: - private functions
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterProtocol {

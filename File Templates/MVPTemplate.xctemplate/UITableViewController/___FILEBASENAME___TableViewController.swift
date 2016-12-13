@@ -29,13 +29,13 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
   }
+    
+  // MARK: - Navigation
   
   // MARK: - Display logic
   
   // MARK: - Actions
-  
-  // MARK: - Private functions
-  
+    
   // MARK: - Overrides
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -49,6 +49,9 @@ class ___FILEBASENAMEASIDENTIFIER___TableViewController: UITableViewController {
   override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return UITableViewAutomaticDimension
   }
+    
+  // MARK: - Private functions
+
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___TableViewController:  ___FILEBASENAMEASIDENTIFIER___TableViewProtocol {

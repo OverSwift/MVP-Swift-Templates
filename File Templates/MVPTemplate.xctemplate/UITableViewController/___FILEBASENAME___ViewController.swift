@@ -31,6 +31,8 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     super.viewWillAppear(animated)
   }
   
+  // MARK: - Navigation
+  
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let table = segue.destination as? ___FILEBASENAMEASIDENTIFIER___TableViewController {
       tableController = table
@@ -43,6 +45,8 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
   
   // MARK: - Actions
   
+  // MARK: - Overrides
+    
   // MARK: - Private functions
 }
 
