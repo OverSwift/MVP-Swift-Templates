@@ -92,6 +92,6 @@
 	<key>SortOrder</key>
 	<string>2</string>
 	<key>Summary</key>
-	<string>This generates a new scene using Uncle Bob&apos;s clean architecture.</string>
+	<string>This generates a new MVP scene.</string>
 </dict>
 </plist>
